@@ -10,21 +10,32 @@
 # Project: Cardiovascular Disease Detector
 
 # Description
-The project is about developing a web app for predicting whether an individual is less or more susceptible to get cardiovascular disease. The web app are developed using Python's Streamlit library. For the predictive model, it is obtained by training and comparing the performance of 3 machine learning classification algortihms i.e. Logistic Regression, Decision Tree, and Random Forest.a supervised machine learning classification model (Random Forest Classifier) on the [Heart Attack Analysis & Prediction Dataset](https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=o2Saturation.csv). This dataset contains 300+ sample patients/individuals with their personal/medical details as the features.
+The project is about developing a web app for predicting whether an individual is less or more susceptible to get cardiovascular disease. The web app are developed using Python's Streamlit library. For the predictive model, it is obtained by training and comparing the performance of 3 machine learning classification algortihms i.e. Logistic Regression, Decision Tree, and Random Forest. All 3 classification algorithm was trained and tested on the [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset) consisting of 70,000+ records of patients data. 
 
 # How to Install and Run the Project
-To run the web app on a localhost web browser, download/clone the whole repository first. Then, proceed to the directory containin the cloned repository. In the terminal while also in this particular directory, execute `streamlit run app.py`. In a few seconds, the web app will automatically launch as a tab in your default browser.
+## Running the model training & testing
+Clone the whole repository and then, proceed to the directory containing the cloned repository. Locate the `cardio_predictions.py` file and run it in the terminal or in any of your preferred IDEs. In a few seconds, all the relevant process e.g. data loading, EDA, model training, and results will be generated.
+
+## Running the web app
+To run the web app on a localhost web browser, download/clone the whole repository first. Then, proceed to the directory containing the cloned repository. In the terminal while also in this particular directory, execute `streamlit run app.py`. In a few seconds, the web app will automatically launch as a tab in your default browser.
 
 # How to Use the Web App Predictor
-The usage is quite simple. Just input your relevant details as prompted in the form in the web app. Then, submit the filled details and the app will show the prediction.
+The usage is quite simple. Just input your relevant details as prompted in the form in the web app. Then, submit the filled details and the app will display the generated predictions from the trained model.
 
 # Results
-## Developed app
-![app screenshot 1](statics/developed_app_1.png)
-![app screenshot 2](statics/developed_app_2.png)
+## Algorithm performances
+### Classification report
+![reports](statics/classification_reports.png)
+### Confusion matrix
+![matrices](statics/confusion_matrices.png)
+
+## Web app screenshots
+![app screenshot 1](statics/web_app_1.png)
+![app screenshot 1](statics/web_app_2.png)
+![app screenshot 1](statics/web_app_3.png)
+
 
 # Credits
-- [Heart Attack Analysis & Prediction Dataset](https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=o2Saturation.csv)
+- [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
 - [Markdown badges source 1](https://github.com/Ileriayo/markdown-badges)
 - [Markdown badges source 2](https://github.com/alexandresanlim/Badges4-README.md-Profile)
-- [Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
